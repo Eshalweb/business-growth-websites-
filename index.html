@@ -1,124 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- EshalWeb Cinematic v4 - Handcrafted by Eshal Fatima, Lahore - Nov 2024 -->
+<!-- EshalWeb - Final Pro Cinematic 3D - Handcrafted by Eshal Fatima Lahore - Nov 2024 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EshalWeb - Cinematic Business Websites</title>
-<meta name="author" content="EshalWeb Lahore">
-<meta name="description" content="Cinematic 3D business websites by EshalWeb Lahore. Premium glassmorphism, animated growth visuals. Contact eshalweb6@gmail.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EshalWeb - Professional Cinematic Websites That Grow Business</title>
+<meta name="description" content="EshalWeb Lahore - Premium cinematic 3D business websites. Modern, animated, fast. Pricing $20-$100. Contact eshalweb6@gmail.com | LinkedIn eshal-web-068576441">
+<meta name="author" content="Eshal Fatima - EshalWeb">
+<meta name="theme-color" content="#060e26">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{font-family:Inter,sans-serif;background:#050c26;color:#e8efff;overflow-x:hidden}
-body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(1000px at 75% 0%,rgba(60,110,255,0.28),transparent),radial-gradient(700px at 0% 100%,rgba(10,25,70,0.8),transparent);animation:bgPulse 8s ease-in-out infinite}
-@keyframes bgPulse{0%,100%{opacity:1}50%{opacity:0.7}}
+body{font-family:Inter,sans-serif;background:#050c26;color:#e8f0ff;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(1000px at 75% 0%,rgba(60,110,255,0.26),transparent),radial-gradient(800px at 0% 100%,rgba(12,28,80,0.85),transparent)}
 
-/* Nav with drop */
-.nav{position:sticky;top:0;z-index:999;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:rgba(6,14,38,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(120,160,255,0.15);box-shadow:0 10px 40px rgba(0,0,0,0.4)}
-.logo{font-family:Space Grotesk;font-weight:700;font-size:23px}.logo b{color:#5b8eff;text-shadow:0 0 15px rgba(91,142,255,0.8)}
-.menu{display:flex;gap:22px;align-items:center}.menu a{color:#a8bcd9;text-decoration:none;font-size:13.5px;transition:0.3s}.menu a:hover{color:#fff;text-shadow:0 0 10px #5b8eff}
-.btn{padding:10px 20px;border-radius:12px;font-weight:800;font-size:12.5px;text-decoration:none;display:inline-block;transition:0.35s;cursor:pointer;border:none}
-.btn-primary{background:linear-gradient(135deg,#3a7bff,#1a44d6);color:#fff;box-shadow:0 0 25px rgba(58,123,255,0.55),0 8px 20px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2);animation:glowBtn 2.5s infinite}
-@keyframes glowBtn{0%,100%{box-shadow:0 0 25px rgba(58,123,255,0.55)}50%{box-shadow:0 0 40px rgba(58,123,255,0.9)}}
-.btn-primary:hover{transform:translateY(-2px) scale(1.03)}
+/* NAV - Fixed header cut issue solved */
+.nav-eshal{position:sticky;top:0;z-index:9999;display:flex;justify-content:space-between;align-items:center;padding:16px 5%;background:rgba(6,14,38,0.96);backdrop-filter:blur(22px);border-bottom:1px solid rgba(120,160,255,0.15);box-shadow:0 12px 40px rgba(0,0,0,0.45)}
+.logo{font-family:Space Grotesk;font-size:24px;font-weight:700}.logo b{color:#5b8eff;text-shadow:0 0 18px rgba(91,142,255,0.7)}
+.menu{display:flex;gap:24px;align-items:center}.menu a{color:#a8bcd9;text-decoration:none;font-size:13.5px;transition:0.3s}.menu a:hover{color:#fff}
+.btn{padding:11px 22px;border-radius:12px;font-weight:800;font-size:12.5px;text-decoration:none;display:inline-block;transition:0.4s;cursor:pointer;border:none}
+.btn-main{background:linear-gradient(135deg,#3a7bff,#1a44d6);color:#fff;box-shadow:0 0 28px rgba(58,123,255,0.6),0 10px 24px rgba(0,0,0,0.35);animation:btnGlow 2.8s infinite}
+@keyframes btnGlow{0%,100%{box-shadow:0 0 28px rgba(58,123,255,0.6)}50%{box-shadow:0 0 45px rgba(58,123,255,0.95)}}
+.btn-main:hover{transform:translateY(-2px) scale(1.04)}
 
-/* Hero Cinematic */
-.hero{max-width:1280px;margin:0 auto;padding:40px 5%;display:grid;grid-template-columns:1.1fr 0.9fr;gap:30px;align-items:center;min-height:70vh}
-.hero h1{font-family:Space Grotesk;font-size:38px;line-height:1.1;text-shadow:0 0 30px rgba(90,140,255,0.3)}
-.hero p{color:#93a9c9;margin-top:14px;font-size:14px;max-width:440px}
-.hero-btns{margin-top:24px;display:flex;gap:14px}
+/* HERO - Padding 90px fixed so header doesn't overlap */
+.hero-wrap{max-width:1280px;margin:0 auto;padding:90px 5% 40px 5%;display:grid;grid-template-columns:1.15fr 0.85fr;gap:32px;align-items:center}
+.hero-wrap h1{font-family:Space Grotesk;font-size:38px;line-height:1.1;letter-spacing:-0.5px;text-shadow:0 0 30px rgba(90,140,255,0.25)}
+.hero-wrap p{color:#93a9c9;margin-top:14px;font-size:14.5px;max-width:460px;line-height:1.6}
+.hero-btns{margin-top:24px;display:flex;gap:14px;flex-wrap:wrap}
 
-/* 3D Stage - SUPER CINEMATIC */
-.stage{position:relative;height:440px;perspective:1400px;transform-style:preserve-3d}
-.platform{position:absolute;right:5%;bottom:10%;width:80%;height:65%;background:linear-gradient(180deg,rgba(110,150,255,0.22),rgba(40,70,160,0.1));border:1px solid rgba(130,170,255,0.25);border-radius:18px;transform:rotateX(68deg) rotateZ(-10deg);box-shadow:0 40px 80px rgba(0,0,0,0.6),0 0 50px rgba(60,110,255,0.25);animation:floatPlat 5s ease-in-out infinite}
-@keyframes floatPlat{0%,100%{transform:rotateX(68deg) rotateZ(-10deg) translateZ(0)}50%{transform:rotateX(68deg) rotateZ(-10deg) translateZ(20px)}}
-.bars{display:flex;gap:16px;position:absolute;right:14%;bottom:20%;align-items:flex-end;transform:rotateY(-15deg) rotateX(8deg);transform-style:preserve-3d}
-.bar{width:38px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#a3c4ff,#1848c8);box-shadow:0 0 25px rgba(80,130,255,0.7),inset 0 3px 0 rgba(255,255,255,0.4),0 10px 20px rgba(0,0,0,0.5);transform-style:preserve-3d;animation:barGrow 3.5s ease-in-out infinite;position:relative}
-.bar::after{content:'';position:absolute;right:-8px;top:2px;width:8px;height:98%;background:linear-gradient(180deg,#1a3ca0,#0f2460);transform:rotateY(90deg);transform-origin:left;border-radius:0 8px 3px 0}
-.b1{height:55px;animation-delay:0s}.b2{height:92px;animation-delay:0.3s}.b3{height:132px;animation-delay:0.6s}
-@keyframes barGrow{0%,100%{transform:translateZ(0) scaleY(1)}50%{transform:translateZ(15px) scaleY(1.05)}}
-.arrow{position:absolute;left:12%;bottom:48%;width:70%;height:4px;background:linear-gradient(90deg,transparent,#4c82ff,#a3c4ff);transform:rotate(-22deg);box-shadow:0 0 18px rgba(76,130,255,0.9);animation:arrowFly 4s ease-in-out infinite}
-.arrow::before{content:'▲';position:absolute;right:-14px;top:-14px;color:#a3c4ff;font-size:28px;filter:drop-shadow(0 0 12px #5b8eff);transform:rotate(22deg)}
-@keyframes arrowFly{0%,100%{transform:rotate(-22deg) translateX(0)}50%{transform:rotate(-22deg) translateX(12px) translateY(-6px)}}
-.orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,#8ab5ff,#2a5fe0);box-shadow:0 0 30px rgba(90,140,255,0.8);animation:orbFloat 6s ease-in-out infinite}
-.orb1{width:42px;height:42px;right:18%;top:5%}.orb2{width:24px;height:24px;left:10%;top:35%;animation-delay:1s}.orb3{width:18px;height:18px;right:30%;bottom:5%;animation-delay:2s}
-@keyframes orbFloat{0%,100%{transform:translateY(0) translateZ(20px)}50%{transform:translateY(-18px) translateZ(40px)}}
+/* CINEMATIC 3D STAGE - Pro Drop Assist */
+.stage3d{position:relative;height:440px;perspective:1500px;transform-style:preserve-3d}
+.platform3d{position:absolute;right:6%;bottom:12%;width:82%;height:66%;background:linear-gradient(180deg,rgba(110,150,255,0.24),rgba(40,70,160,0.12));border:1px solid rgba(130,170,255,0.28);border-radius:20px;transform:rotateX(68deg) rotateZ(-10deg);box-shadow:0 45px 90px rgba(0,0,0,0.65),0 0 50px rgba(60,110,255,0.3);animation:platFloat 5s ease-in-out infinite}
+@keyframes platFloat{0%,100%{transform:rotateX(68deg) rotateZ(-10deg) translateZ(0)}50%{transform:rotateX(68deg) rotateZ(-10deg) translateZ(22px)}}
+.bars3d{position:absolute;right:15%;bottom:22%;display:flex;gap:18px;align-items:flex-end;transform:rotateY(-14deg) rotateX(8deg);transform-style:preserve-3d}
+.bar3d{width:40px;border-radius:10px 10px 4px 4px;background:linear-gradient(180deg,#b0cfff,#1d4fd6);box-shadow:0 0 30px rgba(80,130,255,0.75),inset 0 4px 0 rgba(255,255,255,0.45),0 12px 24px rgba(0,0,0,0.5);position:relative;animation:barPop 3.8s ease-in-out infinite}
+.bar3d::after{content:'';position:absolute;right:-9px;top:3px;width:9px;height:97%;background:linear-gradient(180deg,#1e3a9e,#0e225f);transform:rotateY(90deg);transform-origin:left;border-radius:0 10px 4px 0}
+.b1{height:58px}.b2{height:96px;animation-delay:0.25s}.b3{height:136px;animation-delay:0.5s}
+@keyframes barPop{0%,100%{transform:translateZ(0) scaleY(1)}50%{transform:translateZ(18px) scaleY(1.06)}}
+.arrow3d{position:absolute;left:10%;bottom:50%;width:72%;height:5px;background:linear-gradient(90deg,transparent,#4d84ff,#b3d0ff);transform:rotate(-22deg);box-shadow:0 0 20px rgba(77,132,255,0.95);animation:fly 4s ease-in-out infinite}
+.arrow3d::before{content:'▲';position:absolute;right:-16px;top:-16px;color:#b3d0ff;font-size:30px;filter:drop-shadow(0 0 14px #5b8eff)}
+@keyframes fly{0%,100%{transform:rotate(-22deg) translateX(0)}50%{transform:rotate(-22deg) translateX(14px) translateY(-8px)}}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,#9bc2ff,#2a5fe0);box-shadow:0 0 35px rgba(90,140,255,0.85);animation:orb 6s ease-in-out infinite}
+.o1{width:44px;height:44px;right:18%;top:6%}.o2{width:26px;height:26px;left:8%;top:36%;animation-delay:1s}.o3{width:18px;height:18px;right:32%;bottom:6%;animation-delay:2s}
+@keyframes orb{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
 
-/* Services with 3D Drop */
-.wrap{max-width:1280px;margin:0 auto;padding:32px 5%}
-.secT{font-family:Space Grotesk;font-size:24px;text-align:center;text-shadow:0 0 20px rgba(90,140,255,0.3)}
-.secS{color:#8fa6c5;text-align:center;font-size:13px;margin-top:6px}
-.list{display:flex;flex-direction:column;gap:18px;margin-top:24px}
-.card{position:relative;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;padding:22px 24px;border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.02));border:1px solid rgba(140,175,255,0.22);backdrop-filter:blur(16px);box-shadow:0 20px 50px rgba(0,0,0,0.45),0 0 0 1px rgba(255,255,255,0.05) inset,0 0 30px rgba(60,110,255,0.12);transform-style:preserve-3d;transition:0.5s;animation:cardIn 0.8s ease-out forwards;opacity:0;transform:translateY(20px)}
-.card:nth-child(1){animation-delay:0.2s}.card:nth-child(2){animation-delay:0.4s}.card:nth-child(3){animation-delay:0.6s}
-@keyframes cardIn{to{opacity:1;transform:translateY(0)}}
-.card:hover{transform:translateY(-6px) rotateX(4deg) rotateY(-3deg) translateZ(20px);box-shadow:0 30px 70px rgba(0,0,0,0.55),0 0 40px rgba(70,120,255,0.25)}
-.cIcon{width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 30% 25%,rgba(130,175,255,0.5),rgba(20,45,110,0.3));border:1px solid rgba(130,170,255,0.25);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 0 35px rgba(70,120,255,0.4),inset 0 0 20px rgba(100,150,255,0.15);animation:iconPulse 3s infinite}
-@keyframes iconPulse{0%,100%{box-shadow:0 0 35px rgba(70,120,255,0.4)}50%{box-shadow:0 0 55px rgba(70,120,255,0.7)}}
-.card h3{font-size:18px;font-weight:700}.card p{color:#9fb3cc;font-size:13px;margin-top:5px;line-height:1.6}
+/* SERVICES - All 3 now WORKING as per your line 99,100,101 fix */
+.wrap{max-width:1280px;margin:0 auto;padding:36px 5%}
+.secTitle{font-family:Space Grotesk;font-size:26px;text-align:center}.secSub{color:#8fa6c5;text-align:center;font-size:13.5px;margin-top:6px}
+.list{margin-top:26px;display:flex;flex-direction:column;gap:20px}
+.cardPro{position:relative;display:grid;grid-template-columns:124px 1fr;gap:18px;align-items:center;padding:24px 26px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,0.11),rgba(255,255,255,0.02));border:1px solid rgba(140,175,255,0.24);backdrop-filter:blur(18px);box-shadow:0 22px 55px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.06) inset,0 0 32px rgba(60,110,255,0.14);text-decoration:none;color:inherit;transition:0.5s;transform-style:preserve-3d;cursor:pointer}
+.cardPro:hover{transform:translateY(-8px) rotateX(5deg) rotateY(-4deg) translateZ(24px);box-shadow:0 34px 80px rgba(0,0,0,0.6),0 0 50px rgba(70,120,255,0.3)}
+.cIcon{width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 32% 26%,rgba(135,180,255,0.55),rgba(20,45,110,0.32));border:1px solid rgba(130,170,255,0.28);display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 0 40px rgba(70,120,255,0.45),inset 0 0 22px rgba(100,150,255,0.18);animation:iconG 3s infinite}
+@keyframes iconG{0%,100%{box-shadow:0 0 40px rgba(70,120,255,0.45)}50%{box-shadow:0 0 60px rgba(70,120,255,0.75)}}
+.cardPro h3{font-size:19px;font-weight:700}.cardPro p{color:#9fb3cc;font-size:13.5px;margin-top:6px;line-height:1.6}
 
-/* Pricing Cinematic */
-.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-.pbox{border-radius:20px;padding:22px 18px;background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));border:1px solid rgba(130,165,255,0.18);backdrop-filter:blur(14px);position:relative;transition:0.45s;transform-style:preserve-3d}
-.pbox:hover{transform:translateY(-8px) translateZ(20px);box-shadow:0 25px 60px rgba(0,0,0,0.5),0 0 35px rgba(60,110,255,0.2)}
-.pbox.pop{background:linear-gradient(180deg,rgba(45,90,220,0.7),rgba(25,55,140,0.75));border-color:rgba(120,170,255,0.5);box-shadow:0 0 45px rgba(45,90,220,0.5);transform:scale(1.06);animation:popGlow 3s infinite}
-@keyframes popGlow{0%,100%{box-shadow:0 0 45px rgba(45,90,220,0.5)}50%{box-shadow:0 0 65px rgba(45,90,220,0.75)}}
-.tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#3a6ef0,#1d3eb5);color:#d6e6ff;font-size:11px;font-weight:800;padding:4px 14px;border-radius:20px;box-shadow:0 0 15px rgba(58,110,240,0.6)}
-footer{margin-top:40px;background:rgba(3,10,28,0.96);padding:26px 5%;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:20px;font-size:12px;color:#8ea3c4;border-top:1px solid rgba(90,130,255,0.12)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.stage{height:340px}.menu{display:none}.pricing{grid-template-columns:1fr}.pbox.pop{transform:none}footer{grid-template-columns:1fr}}
+/* PRICING */
+.pricing{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pbox{border-radius:22px;padding:24px 20px;background:linear-gradient(180deg,rgba(255,255,255,0.09),rgba(255,255,255,0.02));border:1px solid rgba(130,165,255,0.2);backdrop-filter:blur(16px);position:relative;transition:0.45s}
+.pbox:hover{transform:translateY(-8px) translateZ(20px);box-shadow:0 28px 65px rgba(0,0,0,0.55),0 0 40px rgba(60,110,255,0.22)}
+.pbox.pop{background:linear-gradient(180deg,rgba(50,95,225,0.75),rgba(28,60,150,0.8));border-color:rgba(125,175,255,0.55);box-shadow:0 0 55px rgba(50,95,225,0.55);transform:scale(1.07);animation:popG 3s infinite}
+@keyframes popG{0%,100%{box-shadow:0 0 55px rgba(50,95,225,0.55)}50%{box-shadow:0 0 75px rgba(50,95,225,0.8)}}
+.tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#3e6ff0,#1d3eb5);color:#d6e6ff;font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;box-shadow:0 0 18px rgba(62,111,240,0.7)}
+
+footer{margin-top:44px;background:rgba(3,10,28,0.98);padding:28px 5%;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:22px;font-size:12.5px;color:#8ea3c4;border-top:1px solid rgba(90,130,255,0.14)}
+@media(max-width:920px){.hero-wrap{grid-template-columns:1fr;padding:95px 5% 36px 5%}.stage3d{height:340px}.menu{gap:12px;font-size:12px}.pricing{grid-template-columns:1fr}.pbox.pop{transform:none}footer{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="nav">
+
+<header class="nav-eshal">
 <div class="logo">◆ eshal<b>web</b></div>
-<nav class="menu"><a href="#home">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="#contact" class="btn btn-primary">Get Started</a></nav>
+<nav class="menu">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="btn btn-main">Get Started</a>
+</nav>
 </header>
 
-<section class="hero" id="home">
+<section class="hero-wrap" id="home">
 <div>
 <h1>We Build Professional Websites That Grow Your Business</h1>
-<p>Modern, fast, and cinematic 3D websites designed to convert visitors into customers. Let's elevate your brand.</p>
+<p>Modern, fast, and cinematic 3D websites designed to convert visitors into customers. Fully animated with pro 3D drop assist.</p>
 <div class="hero-btns">
-<a href="#contact" class="btn btn-primary">Get Free Consultation</a>
-<a href="#services" class="btn" style="border:1px solid rgba(130,160,255,0.3);color:#c9d8f0;background:rgba(255,255,255,0.05)">View Our Work</a>
+<a href="#contact" class="btn btn-main">Get Free Consultation</a>
+<a href="#services" class="btn" style="border:1px solid rgba(130,160,255,0.32);color:#c9d8f0;background:rgba(255,255,255,0.06)">View Our Work</a>
 </div>
 </div>
-<div class="stage">
-<div class="platform"></div>
-<div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
-<div class="bars"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div></div>
-<div class="arrow"></div>
+<div class="stage3d">
+<div class="platform3d"></div>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<div class="bars3d"><div class="bar3d b1"></div><div class="bar3d b2"></div><div class="bar3d b3"></div></div>
+<div class="arrow3d"></div>
 </div>
 </section>
 
 <section class="wrap" id="services">
-<div class="secT">Our Services</div><div class="secS">Cinematic solutions to launch and scale your online presence</div>
+<div class="secTitle">Our Services</div>
+<div class="secSub">All 3 tools now working - Click to order</div>
 <div class="list">
-<div class="card"><div class="cIcon">🖥️</div><div><h3>Web Design</h3><p>Custom responsive websites built for performance, user experience, and modern 3D aesthetics.</p></div></div>
-<div class="card"><div class="cIcon">🔍</div><div><h3>SEO & Marketing</h3><p>Optimize your site to rank higher and attract more customers with cinematic marketing.</p></div></div>
-<div class="card"><div class="cIcon">🛒</div><div><h3>E-commerce Development</h3><p>Scalable online stores with secure payment, smooth checkout and 3D product drops.</p></div></div>
+<!-- CHANGE #1 Fixed Line 99 -->
+<a href="#pricing" class="cardPro">
+<div class="cIcon">🖥️</div>
+<div><h3>Web Design</h3><p>Custom responsive websites built for performance, user experience, and modern 3D aesthetics. Click to see plans.</p></div>
+</a>
+<!-- CHANGE #2 Fixed Line 100 -->
+<a href="#pricing" class="cardPro">
+<div class="cIcon">🔍</div>
+<div><h3>SEO & Marketing</h3><p>Optimize your site to rank higher and attract more customers. Click to see plans.</p></div>
+</a>
+<!-- CHANGE #3 Fixed Line 101 + Direct Order -->
+<a href="mailto:eshalweb6@gmail.com?subject=E-commerce Order - I want to build store" class="cardPro">
+<div class="cIcon">🛒</div>
+<div><h3>E-commerce Development</h3><p>Scalable online stores with secure payment and smooth checkout. Click to order directly via email.</p></div>
+</a>
 </div>
 </section>
 
 <section class="wrap" id="pricing">
-<div class="secT">Simple, Transparent Pricing</div>
+<div class="secTitle">Simple, Transparent Pricing</div>
+<div class="secSub">Har tool work karega - Order Now se direct email</div>
 <div class="pricing">
-<div class="pbox"><h4>Starter</h4><div style="font-size:28px;font-weight:900;margin-top:4px">$20 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Starter $20 Order" class="btn btn-primary" style="margin-top:14px;width:100%;text-align:center">Order Now</a></div>
-<div class="pbox pop"><div class="tag">Most Popular</div><h4>Growth</h4><div style="font-size:28px;font-weight:900;margin-top:4px">$30 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Growth $30 Order" class="btn" style="margin-top:14px;width:100%;text-align:center;background:#fff;color:#1d3eb5;font-weight:800">Order Now</a></div>
-<div class="pbox"><h4>Pro</h4><div style="font-size:28px;font-weight:900;margin-top:4px">$100 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Pro $100 Order" class="btn btn-primary" style="margin-top:14px;width:100%;text-align:center">Order Now</a></div>
+<div class="pbox"><h4>Starter</h4><div style="font-size:30px;font-weight:900;margin-top:6px">$20 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Order Starter $20 Plan - EshalWeb" class="btn btn-main" style="margin-top:16px;width:100%;text-align:center">Order Now</a></div>
+<div class="pbox pop"><div class="tag">Most Popular</div><h4>Growth</h4><div style="font-size:30px;font-weight:900;margin-top:6px">$30 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Order Growth $30 Plan - EshalWeb" class="btn" style="margin-top:16px;width:100%;text-align:center;background:#fff;color:#1d3eb5;font-weight:800">Order Now</a></div>
+<div class="pbox"><h4>Pro</h4><div style="font-size:30px;font-weight:900;margin-top:6px">$100 <small style="font-size:11px;color:#9fb1cc">/one-time</small></div><a href="mailto:eshalweb6@gmail.com?subject=Order Pro $100 Plan - EshalWeb" class="btn btn-main" style="margin-top:16px;width:100%;text-align:center">Order Now</a></div>
 </div>
 </section>
 
 <footer id="contact">
-<div><div class="logo">◆ eshal<b>web</b></div><p style="margin-top:8px;max-width:260px">We build cinematic websites that grow your business. Lahore, Pakistan.</p></div>
-<div><strong style="color:#d6e2ff">Contact</strong><br><br><a href="mailto:eshalweb6@gmail.com" style="color:#9fbfff;text-decoration:none">eshalweb6@gmail.com</a><br><br><a href="https://www.linkedin.com/in/eshal-web-068576441" target="_blank" style="color:#7aa7ff">LinkedIn Profile ↗</a></div>
-<div><strong style="color:#d6e2ff">Order Now</strong><br><br>Click any Order Now → Email opens<br>LinkedIn DM for fast reply</div>
-<div style="grid-column:1/-1;text-align:center;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.07)">© 2024 eshalweb — Cinematic Edition — All rights reserved</div>
+<div><div class="logo">◆ eshal<b>web</b></div><p style="margin-top:10px;max-width:280px;line-height:1.7">We build cinematic 3D websites that grow your business. Based in Lahore, PK. All tools working with pro drop assist.</p></div>
+<div><strong style="color:#d6e2ff">Contact & Order</strong><br><br><a href="mailto:eshalweb6@gmail.com" style="color:#9fbfff;text-decoration:none">✉ eshalweb6@gmail.com</a><br><br><a href="https://www.linkedin.com/in/eshal-web-068576441" target="_blank" style="color:#7aa7ff;text-decoration:none">🔗 LinkedIn: eshal-web-068576441 ↗</a></div>
+<div><strong style="color:#d6e2ff">How Client Orders?</strong><br><br>1. Click Web Design / SEO / E-commerce<br>2. Click Order Now<br>3. Gmail opens → Client sends order</div>
+<div style="grid-column:1/-1;text-align:center;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08)">© 2024 eshalweb — Pro Cinematic 3D Edition — All Tools Working — Lahore PK</div>
 </footer>
+
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{let id=a.getAttribute('href');if(id.length>1){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth'})}})});
+// All tools working - smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+ a.addEventListener('click',function(e){
+  let id=this.getAttribute('href');
+  if(id.length>1 && id.startsWith('#')){
+   e.preventDefault();
+   document.querySelector(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+ });
+});
 </script>
 </body>
-</html>
+  </html>
